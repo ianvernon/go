@@ -1,9 +1,6 @@
 {
 	"ImportPath": "github.com/thoughtbot/hound-go",
 	"GoVersion": "go1.4.2",
-	"Packages": [
-		"./..."
-	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/Sirupsen/logrus",
@@ -33,6 +30,10 @@
 			"Rev": "44145f04b68cf362d9c4df2182967c2275eaefed"
 		},
 		{
+			"ImportPath": "github.com/golang/lint",
+			"Rev": "7b7f4364ff76043e6c3610281525fabc0d90f0e4"
+		},
+		{
 			"ImportPath": "github.com/youtube/vitess/go/acl",
 			"Rev": "3de9bdb49e2d5e5f6605d1e3ac5d5938be35e5aa"
 		},
@@ -51,6 +52,18 @@
 		{
 			"ImportPath": "golang.org/x/net/context",
 			"Rev": "d9558e5c97f85372afee28cf2b6059d7d3818919"
+		},
+		{
+			"ImportPath": "golang.org/x/tools/go/exact",
+			"Rev": "e645bbf89890fbf93251a1432dad678746bcec6c"
+		},
+		{
+			"ImportPath": "golang.org/x/tools/go/gcimporter",
+			"Rev": "e645bbf89890fbf93251a1432dad678746bcec6c"
+		},
+		{
+			"ImportPath": "golang.org/x/tools/go/types",
+			"Rev": "e645bbf89890fbf93251a1432dad678746bcec6c"
 		}
 	]
 }

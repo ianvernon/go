@@ -6,6 +6,12 @@ type Reviewer interface {
 	Review(GoReviewJobPayload) ([]violation, error)
 }
 
+type reviewerFunc func(GoReviewJobPayload) ([]violation, error)
+
+func (f reviewerFunc) Review(p GoReviewJobPayload) ([]violation, error) {
+	return f(p)
+}
+
 type Enqueuer interface {
 	Enqueue(className string, args ...interface{}) error
 }

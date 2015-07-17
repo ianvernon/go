@@ -7,12 +7,6 @@ import (
 	"github.com/benmanns/goworker"
 )
 
-type reviewerFunc func(GoReviewJobPayload) ([]violation, error)
-
-func (f reviewerFunc) Review(p GoReviewJobPayload) ([]violation, error) {
-	return f(p)
-}
-
 type enqueuerFunc func(className string, args ...interface{}) error
 
 func (f enqueuerFunc) Enqueue(className string, args ...interface{}) error {

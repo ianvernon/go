@@ -1,1 +1,1 @@
-worker: ./hound-go -queues "go_review" -use-number
+worker: ./hound-go -use-number -queues "$QUEUE"

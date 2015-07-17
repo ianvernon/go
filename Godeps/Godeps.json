@@ -1,0 +1,56 @@
+{
+	"ImportPath": "github.com/thoughtbot/hound-go",
+	"GoVersion": "go1.4.2",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.8.2-20-gab7e46e",
+			"Rev": "ab7e46ea22bd379e660230844f96d20f1dabc21a"
+		},
+		{
+			"ImportPath": "github.com/benmanns/goworker",
+			"Comment": "v0.1.2",
+			"Rev": "36e605a9e15a8a1d99ddacc079dd178758aa1db5"
+		},
+		{
+			"ImportPath": "github.com/cihub/seelog",
+			"Comment": "go1.1-81-gc510775",
+			"Rev": "c510775bb50d98213cfafca75a4bc5e3fddc8d8f"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/internal",
+			"Rev": "a47585eaae68b1d14b02940d2af1b9194f3caa9c"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/redis",
+			"Rev": "a47585eaae68b1d14b02940d2af1b9194f3caa9c"
+		},
+		{
+			"ImportPath": "github.com/golang/glog",
+			"Rev": "44145f04b68cf362d9c4df2182967c2275eaefed"
+		},
+		{
+			"ImportPath": "github.com/youtube/vitess/go/acl",
+			"Rev": "3de9bdb49e2d5e5f6605d1e3ac5d5938be35e5aa"
+		},
+		{
+			"ImportPath": "github.com/youtube/vitess/go/cache",
+			"Rev": "3de9bdb49e2d5e5f6605d1e3ac5d5938be35e5aa"
+		},
+		{
+			"ImportPath": "github.com/youtube/vitess/go/pools",
+			"Rev": "3de9bdb49e2d5e5f6605d1e3ac5d5938be35e5aa"
+		},
+		{
+			"ImportPath": "github.com/youtube/vitess/go/sync2",
+			"Rev": "3de9bdb49e2d5e5f6605d1e3ac5d5938be35e5aa"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "d9558e5c97f85372afee28cf2b6059d7d3818919"
+		}
+	]
+}

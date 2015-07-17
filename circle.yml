@@ -1,0 +1,18 @@
+machine:
+  environment:
+    GOPATH: "/home/ubuntu/.go_workspace"
+
+dependencies:
+  pre:
+    - go get github.com/tools/godep
+
+  override:
+    - mkdir -p "$GOPATH/src/github.com/thoughtbot/hound-go"
+    - rsync -azC --delete ./ "$GOPATH/src/github.com/thoughtbot/hound-go"/
+    - cd "$GOPATH/src/github.com/thoughtbot/hound-go/"
+
+test:
+  pre:
+    - bin/vet
+  override:
+    - godep go test ./...

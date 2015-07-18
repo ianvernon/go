@@ -48,7 +48,7 @@ func newGoReviewJobPayload(args []interface{}) (GoReviewJobPayload, error) {
 // of the data in the first argument of a CompletedFileReviewJob.
 type CompletedFileReviewJobPayload struct {
 	FileInfo
-	Violations []violation `json:"violation"`
+	Violations []violation `json:"violations"`
 }
 
 type violation struct {

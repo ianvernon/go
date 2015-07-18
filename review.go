@@ -12,10 +12,6 @@ func (f reviewerFunc) Review(p GoReviewJobPayload) ([]violation, error) {
 	return f(p)
 }
 
-type Enqueuer interface {
-	Enqueue(className string, args ...interface{}) error
-}
-
 // newGoReviewJob returns a function which satisfies
 // the workerFunc type of goworker.
 func newGoReviewJob(r Reviewer, queue Enqueuer) func(string, ...interface{}) error {

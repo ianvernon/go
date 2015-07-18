@@ -7,12 +7,6 @@ import (
 	"github.com/benmanns/goworker"
 )
 
-type enqueuerFunc func(className string, args ...interface{}) error
-
-func (f enqueuerFunc) Enqueue(className string, args ...interface{}) error {
-	return f(className, args...)
-}
-
 var (
 	successReviewer reviewerFunc = func(GoReviewJobPayload) ([]violation, error) {
 		return []violation{fixtureViolation}, nil

@@ -11,7 +11,7 @@ import (
 type FileInfo struct {
 	Name              string `json:"filename"`
 	CommitSHA         string `json:"commit_sha"`
-	PullRequestNumber string `json:"pull_request_number"`
+	PullRequestNumber int    `json:"pull_request_number"`
 	Patch             string `json:"patch"`
 }
 

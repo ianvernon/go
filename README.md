@@ -1,5 +1,7 @@
 hound-go
-===============
+========
+
+[![Build Status](https://circleci.com/gh/thoughtbot/hound-go/tree/master.svg?style=svg)](https://circleci.com/gh/thoughtbot/hound-go/tree/master)
 
 Go review service for Hound.
 

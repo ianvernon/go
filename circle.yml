@@ -1,18 +1,18 @@
 machine:
   environment:
-    GOPATH: "/home/ubuntu/.go_workspace"
+    IMPORT_PATH: "github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME"
 
 dependencies:
   pre:
     - go get github.com/tools/godep
 
   override:
-    - mkdir -p "$GOPATH/src/github.com/thoughtbot/hound-go"
-    - rsync -azC --delete ./ "$GOPATH/src/github.com/thoughtbot/hound-go"/
-    - cd "$GOPATH/src/github.com/thoughtbot/hound-go/"
+    - mkdir -p "$GOPATH/src/$IMPORT_PATH"
+    - rsync -azC --delete ./ "$GOPATH/src/$IMPORT_PATH/"
 
 test:
   pre:
     - bin/vet
+
   override:
     - godep go test ./...

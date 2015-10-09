@@ -3,7 +3,7 @@ hound-go
 
 [![Build Status](https://circleci.com/gh/thoughtbot/hound-go/tree/master.svg?style=svg)](https://circleci.com/gh/thoughtbot/hound-go/tree/master)
 
-Go review service for Hound.
+Go review service for Hound. Backed by [golint](https://github.com/golang/lint).
 
 Contributing
 ------------

@@ -28,7 +28,9 @@ and may be redistributed under the terms specified in the [LICENSE] file.
 About
 -----
 
-hound-go is maintained by Bernerd Schaefer.
+hound-go is maintained by Bernerd Schaefer and [thoughtbot's Go development team].
+
+[thoughtbot's Go development team]: <https://thoughtbot.com/services/go> "Go development team | Hire thoughtbot Gophers"
 
 ![thoughtbot](https://thoughtbot.com/logo.png)
 
